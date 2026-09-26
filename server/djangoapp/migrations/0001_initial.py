@@ -58,13 +58,13 @@ class Migration(migrations.Migration):
                             ('SEDAN', 'Sedan'),
                             ('SUV', 'SUV'),
                             ('WAGON', 'Wagon')
-                        ], 
+                        ],
                         default='SUV',
                         max_length=10
                     )
                 ),
                 (
-                    'year', 
+                    'year',
                     models.IntegerField(
                         default=2023,
                         validators=[
