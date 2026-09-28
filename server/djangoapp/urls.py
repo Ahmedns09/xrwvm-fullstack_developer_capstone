@@ -58,6 +58,14 @@ urlpatterns = [
         name='add_review'
     ),
 
+    # path for car inventory 
+    # (new microservice created post capstone project)
+    path(
+        route='get_inventory/<int:dealer_id>',
+        view=views.get_inventory,
+        name='get_inventory'
+    ),
+
 ] + static(
         settings.MEDIA_URL,
         document_root=settings.MEDIA_ROOT
